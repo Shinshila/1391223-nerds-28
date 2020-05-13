@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Юлия Васнецова](https://up.htmlacademy.ru/htmlcss/28/user/1391223).
-* Наставник: [Дмитрий Иовлев](https://up.htmlacademy.ru/htmlcss/28/tutors).
+* Наставник: [Дмитрий Иовлев](https://htmlacademy.ru/profile/skywalker).
 
 ---
 
