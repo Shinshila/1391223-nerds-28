@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Сайт компании "Нёрдс"</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
@@ -21,36 +22,38 @@
       </header>
       <main>
         <h1 class="visually-hidden">Дизайн студия Нёрдс</h1>
-        <section>
+        <section class="slider">
           <h2 class="visually-hidden">
             Преимущества
           </h2>
-          <div>
+          <div class="slider-item slider">
             <h3>Долго, дорого,скрупулезно.</h3>
             <p>Математически выверенный дизайн для вашего сайта или мобильно приложения</p>
             <img src="img/nerds-index-slide1_1.png" width="760" height="431" alt="Картинка с телефонами">
             <a href="#">Узнать больше</a>
           </div>
-          <div>
+          <div class="slider-item slider">
             <h3>Любим математику как никто другой.</h3>
             <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
             <img src="img/nerds-index-slide2_1.png" width="760" height="431" alt="Картинка с компьютером">
             <a href="#">Узнать больше</a>
           </div>
-          <div>
+          <div class="slider-item slider">
             <h3>Только ночь, только хардкор.</h3>
             <p>Работать днём, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
             <img src="img/nerds-index-slide3_1.png" width="760" height="431" alt="Картинка с Айпадом">
             <a href="#">Узнать больше</a>
           </div>
-          <div>
-            <input type="radio">
-            <input type="radio">
-            <input type="radio">
+          <div class="slider-controls">
+            <button type="button" name="slider">Первый слайд</button>
+            <button type="button" name="slider">Второй слайд</button>
+            <button type="button" name="slider">Третий слайд</button>
           </div>
         </section>
+
         <section>
-          <h2>Услуги</h2>
+          <h2 class="visually-hidden">Услуги</h2>
+
           <ul>
             <li>
               <h3>Вэб сайты</h3>
@@ -82,21 +85,20 @@
             <li>Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
           <img src="img/nerds-illustration_1.png" width="360" height="208" alt="Логотип Нёрдс 2">
-          <h3>С 2004 года любим точность во всем:</h3>
-          <ul>
-            <li>
-              <p>146 %</p>
-              <p>Уровень самоотдачи</p>
-            </li>
-            <li>
-              <p>100 %</p>
-              <p>Соблюдение сроков</p>
-            </li>
-            <li>
-              <p>50 %</p>
-              <p>Минимальная предоплата</p>
-            </li>
-          </ul>
+
+          <table>
+            <caption>С 2004 года любим точность во всем:</caption>
+            <tr>
+              <th>146 %</th>
+              <th>100 %</th>
+              <th>50 %</th>
+            </tr>
+            <tr>
+              <th>Уровень самоотдачи</th>
+              <th>Соблюдение сроков</th>
+              <th>Минимальная предоплата</th>
+            </tr>
+          </table>
         </section>
         <div>
           <ul>
@@ -117,6 +119,9 @@
               ул. Б. Конюшенная, д. 19/8<br>
               <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
             </address>
+            <div>
+              <a href="#">Напишите нам</a>
+            </div>
           </div>
         </div>
       </main>
@@ -124,13 +129,13 @@
       <div>
         <ul>
           <li>
-            <a href="#">Вконтакте</a>
+            <a class="visually-hidden" href="#" >Вконтакте</a>
           </li>
           <li>
-            <a href="#">Фейсбук</a>
+            <a class="visually-hidden" href="#" >Фейсбук</a>
           </li>
           <li>
-            <a href="#">Инстаграм</a>
+            <a class="visually-hidden" href="#">Инстаграм</a>
           </li>
         </ul>
       </div>
@@ -152,7 +157,7 @@
           </div>
           <div>
             <label for="comment">Текст письма:</label>
-            <p><textarea name="comment-field" id="comment" rows="10" cols="30" placeholder="В свободной форме"></textarea></p>
+            <textarea name="comment-field" id="comment" rows="10" cols="30" placeholder="В свободной форме"></textarea>
           </div>
           <p>
             <button class="button" type="submit">Отправить</button>
