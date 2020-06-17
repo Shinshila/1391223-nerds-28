@@ -1,0 +1,62 @@
+/*все цвета вынести в кастомные свойства, в значение :root*/
+:root {
+  --basic-black: #000000;
+  --basic-extra-grey: #283136; /*в каталоге от и до,темная плашка над картинками */
+  --basic-grey:#666666;
+  --basic-light-grey: #ABABAB;
+  --basic-dark: #4D4D4D;/*в каталоге темная плашка над картинками */
+  --basic-neutral: #EEEEEE;
+  --basic-white: #ffffff;
+
+
+}
+
+.visually-hidden {
+  visibility: hidden;
+}
+
+body{
+  min-width: 1160px;
+  margin: 0;
+  padding: 10;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+  background-position: top center;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--basic-black);
+  background-color: var(--basic-neutral);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  text-decoration: underline red;
+}
+/*как понять есть ли изменение в цвете при наведении курсора или нет*/
+
+
+
+
