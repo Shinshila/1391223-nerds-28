@@ -1,6 +1,7 @@
 /*все цвета вынести в кастомные свойства, в значение :root*/
 :root {
   --basic-black: #000000;
+  --basic-black2:#444444;
   --basic-grey8: #283136; /*в каталоге от и до,темная плашка над картинками */
   --basic-grey1: #EEEEEE;
   --basic-grey2: #DFDFDF;
@@ -124,4 +125,33 @@ a:active.button-red  {
 
 .button-yellow {
   background-color: var(--basin-gold1);
+}
+/*footer*/
+.main-footer {
+  color: var(--basic-black2);
+  background-color: var(--basic-white);
+}
+
+.footer-social {
+  list-style: none;
+}
+.social-button {
+  color: inherit;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: var(--basic-red2);
+}
+
+.appeal-head {
+  color: var(--basic-black);
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.discount {
+  color: var(--basic-black2);
+  font-size: 16px;
+  line-height: 22px;
 }
