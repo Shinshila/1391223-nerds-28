@@ -1,35 +1,70 @@
 /*все цвета вынести в кастомные свойства, в значение :root*/
 :root {
   --basic-black: #000000;
-  --basic-extra-grey: #283136; /*в каталоге от и до,темная плашка над картинками */
-  --basic-grey:#666666;
-  --basic-light-grey: #ABABAB;
-  --basic-dark: #4D4D4D;/*в каталоге темная плашка над картинками */
-  --basic-neutral: #EEEEEE;
+  --basic-grey8: #283136; /*в каталоге от и до,темная плашка над картинками */
+  --basic-grey1: #EEEEEE;
+  --basic-grey2: #DFDFDF;
+  --basic-grey3: #D5D5D5;
+  --basic-grey4: #ABABAB;
+  --basic-grey5: #A6A6A6; /*цвет логотипа нажатие*/
+  --basic-grey6:#666666;
+  --basic-grey7: #4D4D4D;/*в каталоге темная плашка над картинками */
+  --basic-grey8: #283136; /*в каталоге от и до,темная плашка над картинками */
   --basic-white: #ffffff;
-
-
+  --basic-red1: #FB565A; /*навигация наведение, подчеркивание, кнопка в покое, крестик нажатие*/
+  --basic-red2: #E74246; /*кнопка, наведение*/
+  --basic-red3: #D7373B; /*кнопка, нажатие*/
+  --basic-grin1: #00CA74; /*кнопка покой*/
+  --basic-grin2: #00BC6C; /*кнопка наведение*/
+  --basic-grin3: #00AA62; /*кнопка нажатие*/
+  --basin-gold1: #EFC849; /*кнопка желтая*/
+  --basin-gold2: #EAB534;
+  --basin-gold1: #E5A722;
 }
 
 .visually-hidden {
-  visibility: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
 }
 
-body{
-  min-width: 1160px;
-  margin: 0;
+body {
+  min-width: 1160px;ы
+  margin: 10;
   padding: 10;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 500;
+  font-weight: normal;
   color: var(--basic-black);
-  text-transform: uppercase;
   background-color: var(--basic-white);
-  background-position: top center;
 }
 
-a {
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  background-color: var(--basic-grey1);
+}
+
+.site-navigation a {
+  color: var(--basic-black);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.site-navigation a:hover {
+  color: var(--basic-red1);
+  text-decoration: none;
+}
+
+.site-navigation a:active {
+  color: var(--basic-grey3);
   text-decoration: none;
 }
 
@@ -38,25 +73,55 @@ img {
   height: auto;
 }
 
-.main-navigation {
-  font-size: 16px;
-  line-height: 30px;
-  color: var(--basic-black);
-  background-color: var(--basic-neutral);
-}
-
 .site-navigation {
   list-style: none;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus {
-  text-decoration: underline red;
+.major-heading {
+  background-color: var(--basic-grey1);
 }
-/*как понять есть ли изменение в цвете при наведении курсора или нет*/
 
+.services {
+ color: var(--basic-grey8);
+}
 
+.services-item {
+  color: var(--basic-black);
+  font-size: 24px;
+  text-transform: uppercase;
+}
 
+.services-button {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  border: none;
+  border-radius: 3px;
+  background-color: none;
+  padding: 17px 40px 15px 39px;
+}
 
+.button-red {
+  background-color: var(--basic-red1);
+}
+a:hover.button-red  {
+  background-color: var(--basic-red2);
+}
+a:active.button-red  {
+  background-color: var(--basic-red3);
+  color: var ();
+}
+/*как сделать текст кнопки при нажатии тусклым*/
+
+.button-green {
+  background-color: var(--basic-grin1);
+}
+
+.button-yellow {
+  background-color: var(--basin-gold1);
+}
