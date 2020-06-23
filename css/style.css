@@ -11,6 +11,7 @@
   --basic-grey6:#666666;
   --basic-grey7: #4D4D4D;/*в каталоге темная плашка над картинками */
   --basic-grey8: #283136; /*в каталоге от и до,темная плашка над картинками */
+  --basic-grey9: #E1E1E1;
   --basic-white: #ffffff;
   --basic-red1: #FB565A; /*навигация наведение, подчеркивание, кнопка в покое, крестик нажатие*/
   --basic-red2: #E74246; /*кнопка, наведение*/
@@ -20,7 +21,7 @@
   --basic-grin3: #00AA62; /*кнопка нажатие*/
   --basin-gold1: #EFC849; /*кнопка желтая*/
   --basin-gold2: #EAB534;
-  --basin-gold1: #E5A722;
+  --basin-gold3: #E5A722;
 }
 
 .visually-hidden {
@@ -35,9 +36,9 @@
 }
 
 body {
-  min-width: 1160px;ы
-  margin: 10;
-  padding: 10;
+  min-width: 1160px;
+  margin: 0;
+  padding: 0;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -46,37 +47,46 @@ body {
   background-color: var(--basic-white);
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .main-navigation {
   font-size: 16px;
   line-height: 30px;
   background-color: var(--basic-grey1);
 }
 
-.site-navigation a {
+.site-navigation,
+.navigation-basket {
+  list-style: none;
+
+}
+
+.site-navigation a,
+.navigation-basket a {
   color: var(--basic-black);
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 500;
 }
 
-.site-navigation a:hover {
+.site-navigation a:hover,
+.navigation-basket a:hover {
   color: var(--basic-red1);
   text-decoration: none;
 }
 
-.site-navigation a:active {
+.site-navigation a:active,
+.navigation-basket a:active {
   color: var(--basic-grey3);
   text-decoration: none;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
 
-.site-navigation {
-  list-style: none;
-}
+
+
 
 .major-heading {
   background-color: var(--basic-grey1);
@@ -103,40 +113,61 @@ img {
   line-height: 18px;
   border: none;
   border-radius: 3px;
-  background-color: none;
   padding: 17px 40px 15px 39px;
 }
 
 .button-red {
   background-color: var(--basic-red1);
 }
-a:hover.button-red  {
+.button-red:hover  {
   background-color: var(--basic-red2);
 }
-a:active.button-red  {
+.button-red:active {
+  color: rgba(255, 255, 255, .3);
   background-color: var(--basic-red3);
-  color: var ();
 }
-/*как сделать текст кнопки при нажатии тусклым*/
 
 .button-green {
   background-color: var(--basic-grin1);
 }
 
+.button-green:hover {
+  background-color: var(--basic-grin2);
+}
+
+.button-green:active {
+  background-color: var(--basic-grin3);
+  color: rgba(255, 255, 255, .3);
+}
+
 .button-yellow {
   background-color: var(--basin-gold1);
 }
+
+.button-yellow:hover {
+  background-color: var(--basin-gold2);
+}
+
+.button-yellow:active {
+  color: rgba(255, 255, 255, .3);
+  background-color: var(--basin-gold3);
+}
+
 /*footer*/
 .main-footer {
   color: var(--basic-black2);
   background-color: var(--basic-white);
 }
-
+/*кнопки соц.сетей*/
 .footer-social {
   list-style: none;
 }
+
 .social-button {
-  color: inherit;
+  text-align: center;
+  width: 81px;
+  height: 81px;
+  background-color: var(--basic-grey9);
 }
 
 .social-button:hover,
@@ -144,10 +175,13 @@ a:active.button-red  {
   background-color: var(--basic-red2);
 }
 
+/*лозунг призыв*/
 .appeal-head {
   color: var(--basic-black);
+  font-weight: 700;
   font-size: 36px;
   line-height: 36px;
+  display: flex;
 }
 
 .discount {
