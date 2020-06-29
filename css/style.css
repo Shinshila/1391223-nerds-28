@@ -12,6 +12,8 @@
   --basic-grey7: #4D4D4D;/*в каталоге темная плашка над картинками */
   --basic-grey8: #283136; /*в каталоге от и до,темная плашка над картинками */
   --basic-grey9: #E1E1E1;
+  --basic-grey10: #D7DCDE;
+  --basic-grey11: #B4B9BB;
   --basic-white: #ffffff;
   --basic-red1: #FB565A; /*навигация наведение, подчеркивание, кнопка в покое, крестик нажатие*/
   --basic-red2: #E74246; /*кнопка, наведение*/
@@ -51,49 +53,120 @@ img {
   max-width: 100%;
   height: auto;
 }
+/*Хедер навигационные кнопки*/
 
-.main-navigation {
-  font-size: 16px;
-  line-height: 30px;
+.main-header-logo svg {
   background-color: var(--basic-grey1);
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-header-logo:active {
+  fill: var(--basic-grey5);
 }
 
 .site-navigation,
 .navigation-basket {
   list-style: none;
-
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--basic-grey1);
+  margin: 0px;
 }
 
-.site-navigation a,
+.nav-item a,
 .navigation-basket a {
   color: var(--basic-black);
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 500;
+  display: block;
+  padding: 25px 20px;
 }
 
-.site-navigation a:hover,
+.nav-item a:hover,
 .navigation-basket a:hover {
-  color: var(--basic-red1);
   text-decoration: none;
+  color: var(--basic-red1);
 }
 
-.site-navigation a:active,
+.nav-item a:active,
 .navigation-basket a:active {
   color: var(--basic-grey3);
   text-decoration: none;
 }
 
-
-
-
-
 .major-heading {
+  display: block;
   background-color: var(--basic-grey1);
+  padding: 20px;
+  margin: 0px;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  display: flex;
+  align-items: center;
+}
+/*Главная страница.*/
+/*Преимущества*/
+.slider {
+  display: block;
 }
 
+.slider-item h3  {
+font-weight: 500;
+font-size: 55px;
+line-height: 55px;
+background-color: var(--basic-grey1);
+padding: 10px;
+margin: 0px;
+}
+
+.text-slider {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-grey8);
+}
+
+.slide__button {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  border: none;
+  border-radius: 3px;
+  padding: 17px 54px 15px 54px;
+  background-color: var(--basic-red1);
+}
+
+.slide__button:hover {
+  background-color: var(--basic-red2);
+}
+
+.slide__button:active {
+  background-color: var(--basic-red3);
+  color: rgba(255, 255, 255, .3);
+}
+
+.slider-controls{
+
+}
+/*Услуги*/
 .services {
  color: var(--basic-grey8);
+}
+
+.services-list {
+ list-style-type: none;
 }
 
 .services-item {
@@ -153,6 +226,186 @@ img {
   background-color: var(--basin-gold3);
 }
 
+/*Особенности*/
+.features {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  font-style: normal;
+}
+
+.text-features {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-grey8)
+}
+
+.title-features {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.features-list {
+  list-style: none;
+}
+
+.features-item {
+  color: var(--basic-grey8);
+  font-size: 16px;
+  line-height: 44px;
+}
+
+.features-item:before {
+  color: var(--basic-red1);
+  content:  "—";
+  position: relative;
+  left:     -5px;
+}
+
+.progress-head {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.progress-columns {
+  color: var(--basic-black);
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 64px;
+}
+
+.percent {
+  color: var(--basic-black);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 40px;
+}
+
+.progress-lines {
+  color: var(--basic-grey8);
+  vertical-align: middle;
+  width: 20%;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+/*Партнеры*/
+.partners-logo {
+  background-color: var(--basic-grey1);
+  list-style-type: none;
+}
+
+.logo-1 {
+  opacity: 0.2;
+}
+
+.logo-1:hover {
+  opacity:1;
+}
+
+.logo-1:active {
+  opacity: 0.2;
+}
+
+.logo-2 {
+  opacity: 0.2;
+}
+
+.logo-2:hover {
+  opacity:1;
+}
+
+.logo-2:active {
+  opacity: 0.2;
+}
+
+.logo-3 {
+  opacity: 0.2;
+}
+
+.logo-3:hover {
+  opacity:1;
+}
+
+.logo-3:active {
+  opacity: 0.2;
+}
+
+.logo-4 {
+  opacity: 0.2;
+}
+
+.logo-4:hover {
+  opacity:1;
+}
+
+.logo-4:active {
+  opacity: 0.2;
+}
+
+/*адрес*/
+
+.contacts {
+  padding: 45px 53px 51px 47px;
+  border: 1px solid grey;
+}
+.contacts-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.contacts-address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-grey6);
+}
+
+.contacts-telephone {
+  text-decoration: none;
+  color: var(--basic-grey6);
+  font-style: normal;
+}
+
+.contacts-button {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  border: none;
+  border-radius: 3px;
+  padding: 17px 44px 15px 44px;
+  background-color: var(--basic-red1);
+  margin-top: 30px;
+}
+
+.contacts-button:hover {
+  background-color: var(--basic-red2);
+}
+
+.contacts-button:active {
+  background-color: var(--basic-red3);
+  color: rgba(255, 255, 255, .3);
+}
+
+
 /*footer*/
 .main-footer {
   color: var(--basic-black2);
@@ -164,15 +417,28 @@ img {
 }
 
 .social-button {
-  text-align: center;
+  display: flex;
   width: 81px;
   height: 81px;
   background-color: var(--basic-grey9);
+  border-radius: 50%;
+}
+
+.social-button svg {
+  margin: auto;
 }
 
 .social-button:hover,
 .social-button:focus {
   background-color: var(--basic-red2);
+}
+
+.social-button:active {
+  background-color: var(--basic-red3);
+}
+
+.social-button:active svg {
+  opacity: 0.3;
 }
 
 /*лозунг призыв*/
@@ -189,3 +455,131 @@ img {
   font-size: 16px;
   line-height: 22px;
 }
+
+/*попап*/
+
+.feedback-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 53px;
+}
+
+.feedback-name,
+.feedback-email,
+.feedback-text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.feedback-name1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-black2);
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-black2);
+  opacity: 0.5;
+}
+
+input:hover,
+textarea:hover {
+  border:2px solid var(--basic-grey11);
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+  opacity: 1;
+}
+
+.form-email:invalid {
+  border-color: var(--basic-red2);
+  color: var(--basic-red2);
+}
+
+.feedback input,
+.feedback textarea {
+  border-color: var(--basic-grey10);
+}
+
+.feedback-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 17px 82px 15px 84px;
+  border-radius: 3px;
+  background-color: var(--basic-red1);
+  color: var(--basic-white);
+  border: 0;
+}
+
+.button:active {
+  outline: none;
+}
+
+/*Каталог*/
+/*стоимость*/
+
+fieldset {
+  border:0 none;
+}
+
+.cost-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.price-controls {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: var(--basic-grey8);
+}
+
+.filter1-title,
+.slider_catalog-title {
+  color: var(--basic-black);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.filter1-list,
+.slider_catalog-list {
+  list-style-type: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--basic-grey8);
+}
+
+.filter1-list li,
+.slider_catalog-list li {
+  display: block;
+  padding: 10px 10px;
+}
+
+.slider_catalog-button {
+
+}
+
