@@ -32,7 +32,7 @@
         </div>
       </header>
 
-      <section>
+      <section class="table">
         <form method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="cost">
             <legend class="cost-title">Стоимость:</legend>
@@ -105,85 +105,91 @@
 
       </section>
 
-      <section>
+      <section class="filter2">
         <h2 class="visually-hidden">Каталог</h2>
         <div>
-          <p>Сортировать:</p>
+          <p class="filter2-title">Сортировать:</p>
           <div>
-            <ul>
-              <li>
+            <ul class="filter2-list">
+              <li class="filter2-item">
                 <a href="#">По цене</a>
               </li>
-              <li>
+              <li class="filter2-item">
                 <a href="#">По типу</a>
               </li>
-              <li>
+              <li class="filter2-item">
                 <a href="#">По названию</a>
               </li>
             </ul>
           </div>
         </div>
 
-        <ul>
-          <li>
-            <a href="#">Вниз</a>
+        <ul class="filter2-dir">
+          <li class="filter2-dir-item">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg><span class="visually-hidden">Вниз</span>
+            </a>
           </li>
-          <li>
-            <a href="#">Вверх</a>
+          <li class="filter2-dir-item">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg><span class="visually-hidden">Вверх</span></a>
+            </a>
           </li>
         </ul>
 
-        <ul>
-          <li>
-            <a href="#"><h3>Седона</h3>
+        <ul class="example-list">
+          <li class="example-item">
+            <a href="#"><h3>Sedona</h3>
               <img src="img/img-sedona.jpg" width="358" height="578" alt="Sedona">
             </a>
-            <p>Информационный сайт для туристов</p>
-            <a href="#">9900 ₽</a>
+            <p class="example-text">Информационный сайт для туристов</p>
+            <a class="butten-price" href="#">9 900 ₽</a>
           </li>
-          <li>
-            <a href="#"><h3>Пинк</h3>
+          <li class="example-item">
+            <a href="#"><h3>Pink app</h3>
               <img src="img/img-pink.jpg" width="358" height="578" alt="Pinc App">
             </a>
-            <p>Продуктовый лендингприложения для IOS и Android</p>
-            <a href="#">9900 ₽</a>
+            <p class="example-text">Продуктовый лендингприложения для IOS и Android</p>
+            <a class="butten-price" href="#">9 900 ₽</a>
           </li>
-          <li>
-            <a href="#"><h3>Барбершоп Бородинский</h3>
+          <li class="example-item">
+            <a href="#"><h3>Barbershop</h3>
               <img src="img/img-barbershop.jpg" width="358" height="578" alt="Borodinski">
             </a>
-            <p>Сайт салона красоты. Для мужчин, да.</p>
-            <a href="#">9900 ₽</a>
+            <p class="example-text">Сайт салона красоты. Для мужчин, да.</p>
+            <a class="butten-price" href="#">9 900 ₽</a>
           </li>
-          <li>
-            <a href="#"><h3>Мишка</h3>
+          <li class="example-item">
+            <a href="#"><h3>mishka</h3>
               <img src="img/img-mishka.jpg" width="358" height="578" alt="Mishka">
             </a>
-            <p>Интернет-магазин вязаных игрушек.</p>
-            <a href="#">9900 ₽</a>
+            <p class="example-text">Интернет-магазин вязаных игрушек.</p>
+            <a class="butten-price" href="#">9 900 ₽</a>
           </li>
-          <li>
-            <a href="#"><h3>А плюс</h3>
+          <li class="example-item">
+            <a href="#"><h3>a plus</h3>
               <img src="img/img-aplus.jpg" width="358" height="578" alt="A Plus">
             </a>
-              <p>Лендинг курсов повышения квалификации</p>
-              <a href="#">9900 ₽</a>
+              <p class="example-text">Лендинг курсов повышения квалификации</p>
+              <a class="butten-price" href="#">9 900 ₽</a>
           </li>
-          <li>
+          <li class="example-item">
             <a href="#"><h3>Кваст</h3>
               <img src="img/img-kvast.jpg" width="358" height="578" alt="Кваст">
             </a>
-              <p>Промо-сайт производителя крафтового кваса</p>
-              <a href="#">9900 ₽</a>
+              <p class="example-text">Промо-сайт производителя крафтового кваса</p>
+              <a class="butten-price" href="#">9 900 ₽</a>
           </li>
         </ul>
         <div>
-          <nav>
-            <ul>
-              <li><a href="#">1страница</a></li>
-              <li><a href="#">2страница</a></li>
-              <li><a href="#">3страница</a></li>
-              <li><a href="#">Следующая</a></li>
+          <nav class="nav-page">
+            <ul class="nav-page-list">
+              <li class="nav-page-item">
+                <a href="#">1<span class="visually-hidden">страница</span></a>
+              </li>
+              <li class="nav-page-item"><a href="#">2<span class="visually-hidden">страница</span></a></li>
+              <li class="nav-page-item"><a href="#">3<span class="visually-hidden">страница</span></a></li>
+              <li class="nav-page-item"><a class="pade-next" href="#">Следующая</a></li>
             </ul>
           </nav>
         </div>
@@ -242,8 +248,9 @@
         <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
+
     <section class="appointment">
-      <fieldset class="feedback">
+      <fieldset>
         <h2 class="feedback-title">Напишите нам</h2>
         <form>
           <div>
@@ -251,14 +258,14 @@
             <input class="feedback-name1" type="text" name="name" id="name" placeholder="Имя Фамилия">
 
             <label class="feedback-email" for="email">Ваш email:</label>
-            <input type="email" name="email" id="email" placeholder="email@exampl.com">
+            <input class="form-email" type="email" name="email" id="email" placeholder="email@exampl.com">
           </div>
           <div class="appointment-text">
             <label class="feedback-text" for="comment">Текст письма:</label>
-            <textarea name="comment-field" id="comment" rows="10" cols="30" placeholder="В свободной форме"></textarea>
+            <textarea class="form-text" name="comment-field" id="comment" rows="10" cols="30" placeholder="В свободной форме"></textarea>
           </div>
           <p>
-            <button class="button" type="submit">Отправить</button>
+            <button class="button feedback-button" type="submit">Отправить</button>
           </p>
         </form>
       </fieldset>
