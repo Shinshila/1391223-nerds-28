@@ -55,21 +55,25 @@ img {
 }
 /*Хедер навигационные кнопки*/
 
+.main-navigation {
+  display: flex;
+  flex-direction: row;
+}
+
 .main-header-logo svg {
   background-color: var(--basic-grey1);
   margin: 0px;
   padding: 0px;
-  display: flex;
+  display: block;
   flex-wrap: wrap;
 }
 .main-header-logo:active {
   fill: var(--basic-grey5);
-}
+ }
 
 .site-navigation,
 .navigation-basket {
   list-style: none;
-  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
@@ -85,8 +89,16 @@ img {
   color: var(--basic-black);
   text-decoration: none;
   text-transform: uppercase;
-  display: block;
-  padding: 25px 20px;
+  display: flex;
+  padding: 18px 20px;
+}
+
+.main-navigation .nav-item:nth-child(1) {
+  margin-left: 200px;
+}
+
+.navigation-basket {
+
 }
 
 .nav-item a:hover,
@@ -100,7 +112,7 @@ img {
   color: var(--basic-grey3);
   text-decoration: none;
 }
-
+/*на стронице каталога*/
 .major-heading {
   display: block;
   background-color: var(--basic-grey1);
