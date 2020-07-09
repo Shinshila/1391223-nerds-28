@@ -67,22 +67,32 @@ img {
 }
 
 .main-navigation {
-  padding: 75px 0px;
   padding-bottom: 0px;
   background-color: var(--basic-grey1);
-
 }
 
 .main-navigation {
   display: flex;
 }
 
+.main-header-logo {
+  margin-top: 49px;
+}
+
 .main-header-logo svg {
   margin: 0px;
+  margin-top: 49px;
   padding: 0px;
 }
+
 .main-header-logo:active {
   opacity: 0.3;
+ }
+
+ .site-navigation {
+   padding: 0;
+   padding-left: 202px;
+   padding-top: 75px;
  }
 
 .site-navigation,
@@ -106,17 +116,13 @@ img {
   padding-right: 45px;
 }
 
-.main-navigation .nav-item:nth-child(1) {
-  margin-left: 200px;
-}
-
 .nav-basket {
   position: relative;
   max-width: 140px;
   margin: 0;
-  margin-top: 25px;
   margin-left: auto;
   padding: 0;
+  margin-top: 75px;
   padding-left: 15px;
   word-break: keep-all;
 }
@@ -147,26 +153,24 @@ img {
 }
 
 
-
 /*на стронице каталога*/
-
 
 .major-heading {
   position: relative;
   text-align: center;
   background-color: var(--basic-grey1);
-  padding: 20px;
-  margin: 0 auto;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
-  display: flex;
   box-sizing: border-box;
-  padding: 71px 25px 108px;
   width: 100%;
   min-width: 1200px;
   height: 100%;
   word-break: keep-all;
+  margin: 0px;
+  padding-top: 72px;
+  padding-bottom: 108px;
+  margin-bottom: 55px;
 }
 
 /*Главная страница.*/
@@ -783,7 +787,24 @@ margin: 0px;
   list-style-type: none;
 }
 
-/*Каталог */
+/* Каталог */
+
+.catalog .container {
+  display: flex;
+}
+
+.table1 {
+  padding-right: 140px;
+}
+
+.table2 {
+  width: 760px;
+}
+
+.sort {
+  margin-top: 55px;
+}
+
 
 /*шаблоны*/
 
@@ -805,10 +826,10 @@ margin: 0px;
 
 .example-item {
   width: 360;
-  padding-right: 40px;
+  margin-right: 40px;
 }
 
-.example-item:nth-child(2n+2) {
+.example-item:nth-child(2n) {
   padding-right: 0;
 }
 
