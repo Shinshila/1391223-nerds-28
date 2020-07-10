@@ -547,20 +547,28 @@ margin: 0px;
 
 
 /*footer*/
+
 .main-footer {
   color: var(--basic-black2);
   background-color: var(--basic-white);
-}
+}footer
 
 .page-footer {
   display: flex;
+  margin-top: 68px;
+  margin-bottom: 76px;
 }
 /*кнопки соц.сетей*/
 .footer-social {
   list-style: none;
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
+.footer-item {
+  margin-right: 9px;
+}
 .social-button {
   display: flex;
   width: 81px;
@@ -584,6 +592,14 @@ margin: 0px;
 
 .social-button:active svg {
   opacity: 0.3;
+}
+
+.page-footer2 {
+  margin-left: 130px;
+}
+
+.discount {
+  margin-top: 10px;
 }
 
 /*лозунг призыв*/
@@ -705,6 +721,7 @@ margin: 0px;
   color: var(--basic-grey8);
 }
 
+
 .filter1-title,
 .slider_catalog-title,
 .filter2-title {
@@ -756,6 +773,11 @@ margin: 0px;
   color: rgba(0, 1, 1, 0.1);
 }
 
+
+.filter2-title {
+  margin-top: 0;
+}
+
 .filter2-list {
   list-style-type: none;
   font-style: normal;
@@ -763,9 +785,13 @@ margin: 0px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  display: block;
-
+  display: flex;
 }
+
+.sort {
+  display: flex;
+}
+
 .filter2-item a,
 .filter2-dir a {
   text-decoration: none;
@@ -795,16 +821,12 @@ margin: 0px;
 
 .table1 {
   padding-right: 140px;
+  width: 260px;
 }
 
 .table2 {
   width: 760px;
 }
-
-.sort {
-  margin-top: 55px;
-}
-
 
 /*шаблоны*/
 
@@ -817,7 +839,6 @@ margin: 0px;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 100%;
   margin: 0;
   margin-top: 92px;
   padding: 0;
@@ -825,12 +846,12 @@ margin: 0px;
 }
 
 .example-item {
-  width: 360;
+  width: 360px;
   margin-right: 40px;
 }
 
 .example-item:nth-child(2n) {
-  padding-right: 0;
+  margin-right: 0;
 }
 
 .example-item a {
@@ -886,8 +907,20 @@ margin: 0px;
 
 .nav-page-list {
   list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
+.nav-page-item{
+  width: 50px;
+  height: 50px;
+  text-transform: uppercase;
+
+  background-color: var(--basic-grey1);
+  margin-right: 11px;
+  text-align: center;
+}
 .page-next  {
   text-transform: uppercase;
 }
@@ -899,11 +932,9 @@ margin: 0px;
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-black);
-  display: block;
-  padding: 20px 20px 20px 20px;
-  background-color: var(--basic-grey1);
-  margin: 11px;
-  text-transform: uppercase;
+
+
+
 }
 
 
